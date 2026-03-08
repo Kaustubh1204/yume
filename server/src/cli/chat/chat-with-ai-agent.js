@@ -1,7 +1,7 @@
 import chalk from "chalk";
 import boxen from "boxen";
 import { text, isCancel, cancel, intro, outro, confirm } from "@clack/prompts";
-import { AIService } from "../ai/google-service.js";
+import { AIService } from "../config/google-service.js";
 import { ChatService } from "../../service/chat.service.js";
 import { getStoredToken } from "../commands/auth/login.js";
 import prisma from "../../lib/db.js";
