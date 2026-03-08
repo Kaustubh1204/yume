@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "yume": "src/cli/main.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/index.js"
@@ -12,12 +15,26 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "@ai-sdk/google": "^3.0.43",
+    "@clack/prompts": "^1.1.0",
     "@prisma/client": "^5.22.0",
+    "ai": "^6.0.116",
     "better-auth": "^1.5.4",
+    "boxen": "^7.1.1",
+    "chalk": "^5.6.2",
+    "commander": "^14.0.3",
     "cors": "^2.8.6",
     "dotenv": "^17.3.1",
     "express": "^5.2.1",
-    "prisma": "^5.22.0"
+    "figlet": "^1.10.0",
+    "inquirer": "^13.3.0",
+    "marked": "^15.0.12",
+    "marked-terminal": "^7.3.0",
+    "open": "^11.0.0",
+    "ora": "^9.3.0",
+    "prisma": "^5.22.0",
+    "yocto-spinner": "^1.1.0",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"

@@ -1,0 +1,7 @@
+import dotenv from "dotenv";
+dotenv.config();
+
+export const config ={
+    googleApiKey: process.env.GOOGLE_API_KEY || "",
+    model: process.env.YUME_MODEL || "gemini-2.5-flash"
+}
